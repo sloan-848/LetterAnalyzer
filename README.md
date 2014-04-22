@@ -7,8 +7,8 @@ Currently crawls through the database of free eBooks at <a href ="http://www.gut
 Requires the Apache Commons IO library.
 
 After ~200 books, your IP is automatically banned for being a robot...
-
-						  /[-])//  ___
+<pre><BR>
+                          /[-])//  ___
                      __ --\ `_/~--|  / \
                    /_-/~~--~~ /~~~\\_\ /\
                    |  |___|===|_-- | \ \ \
@@ -30,5 +30,6 @@ After ~200 books, your IP is automatically banned for being a robot...
                       |  /            /   |/\/
                        ~~             /  /
                                      |__/
-									
+		
+</pre>
 Go Robots!
