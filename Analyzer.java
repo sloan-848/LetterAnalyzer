@@ -78,10 +78,10 @@ public final class Analyzer {
         for (int i = 0; i < counts.length; i++) {
             counts[i] = new NaturalNumber1L(0);
         }
-        String hosts[] = { "ftp://indian.cse.msu.edu/pub/mirrors/Gutenberg/",
-                "ftp://opensource.nchc.org.tw/gutenberg/",
-                "http://etext.library.adelaide.edu.au/pg/",
-                "http://www.gutenberg.org/dirs/",
+        String hosts[] = { "ftp://indian.cse.msu.edu/pub/mirrors/Gutenberg",
+                "ftp://opensource.nchc.org.tw/gutenberg",
+                "http://etext.library.adelaide.edu.au/pg",
+                "http://www.gutenberg.org/dirs",
                 "ftp://ibiblio.org/pub/docs/books/gutenberg",
                 "http://library.beau.org/gutenberg",
                 "ftp://snowy.arsc.alaska.edu/mirrors/gutenberg",
@@ -94,7 +94,7 @@ public final class Analyzer {
                 "ftp://mirrors.xmission.com/gutenberg",
                 "http://www.knowledgerush.com/gutenberg",
                 "ftp://gutenberg.readingroo.ms/gutenberg",
-                "http://gutenberg.cs.uiuc.edu/" };
+                "http://gutenberg.cs.uiuc.edu" };
         int cHost = 0;
         boolean failed = false;
         int failCount = 0;
@@ -150,7 +150,7 @@ public final class Analyzer {
                 failed = false;
             }
 
-            if (failCount > 30) {
+            if (failCount > 20) {
                 System.out.println("The host at " + hosts[cHost]
                         + " is tapped out.");
                 if (cHost + 1 < hosts.length) {
